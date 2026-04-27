@@ -39,7 +39,8 @@
   ],
   "scripts": {
     "build": "tsc && vite build",
-    "lint": "eslint . --ignore-pattern 'src/language-configs.ts'"
+    "lint": "eslint . --ignore-pattern 'src/language-configs.ts'",
+    "prepare": "tsc && vite build"
   },
   "prettier": "@vuebro/configs/prettierrc",
   "dependencies": {
@@ -56,7 +57,7 @@
   },
   "devDependencies": {
     "@types/node": "^24.10.0",
-    "@vuebro/configs": "^1.1.59",
+    "@vuebro/configs": "jbruwes/configs",
     "eslint": "^9.39.1",
     "vite": "^7.1.12"
   }
